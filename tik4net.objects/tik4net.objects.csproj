@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>tik4net.Objects</RootNamespace>
     <AssemblyName>tik4net.objects</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -55,11 +55,13 @@
     <Compile Include="Interface\Bridge\BridgeFirewallBase.cs" />
     <Compile Include="Interface\Bridge\BridgeFirewallChainType.cs" />
     <Compile Include="Interface\Bridge\BridgeNat.cs" />
+    <Compile Include="Interface\Bridge\BridgeHost.cs" />
     <Compile Include="Interface\Bridge\BridgePort.cs" />
     <Compile Include="Interface\Bridge\BridgeSettings.cs" />
     <Compile Include="Interface\InterfaceBridge.cs" />
     <Compile Include="Interface\InterfaceEthernet.cs" />
     <Compile Include="Interface\InterfaceWireless.cs" />
+    <Compile Include="Interface\Vlan.cs" />
     <Compile Include="Interface\Wireless\WirelessAccessList.cs" />
     <Compile Include="Interface\Wireless\WirelessRegistrationTable.cs" />
     <Compile Include="Interface\Wireless\WirelessSecurityProfile.cs" />
@@ -113,6 +115,7 @@
     <Compile Include="TikEntityPropertyAccessor.cs" />
     <Compile Include="TikConnectionExtensions.cs" />
     <Compile Include="TikPropertyAttribute.cs" />
+    <Compile Include="Tool\Bandwidth-Test.cs" />
     <Compile Include="Tool\ToolPing.cs" />
     <Compile Include="Tool\ToolTorch.cs" />
   </ItemGroup>

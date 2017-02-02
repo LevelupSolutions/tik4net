@@ -32,8 +32,8 @@ namespace tik4net.Objects.Interface.Bridge
         /// <summary>
         /// priority: The priority of the interface in comparison with other going to the same subnet
         /// </summary>
-        [TikProperty("priority", DefaultValue = "128")]
-        public int/*integer: 0..255*/ Priority { get; set; }
+        [TikProperty("priority", DefaultValue = "0x80")]
+        public string Priority { get; set; }
 
         /// <summary>
         /// path-cost: Path cost to the interface, used by STP to determine the "best" path
@@ -76,7 +76,7 @@ namespace tik4net.Objects.Interface.Bridge
         /// </summary>
         public BridgePort()
         {
-            Priority = 0x80;
+            Priority = "0x80";
             PathCost = 10;
             Horizon = "none";
         }

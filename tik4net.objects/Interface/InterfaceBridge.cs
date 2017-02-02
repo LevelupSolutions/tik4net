@@ -95,6 +95,11 @@ namespace tik4net.Objects.Interface
             [TikEnum("proxy-arp")]
             ProxyArp,
             /// <summary>
+            /// proxy-arp - the interface will use the ARP proxy feature
+            /// </summary>
+            [TikEnum("local-proxy-arp")]
+            LocalProxyArp,
+            /// <summary>
             /// reply-only - the interface will only reply to requests originated from matching IP address/MAC address combinations which are entered as static entries in the "/ip arp" table. No dynamic entries will be automatically stored in the "/ip arp" table. Therefore for communications to be successful, a valid static entry must already exist.
             /// </summary>
             [TikEnum("reply-only")]
